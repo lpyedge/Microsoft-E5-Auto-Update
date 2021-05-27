@@ -71,7 +71,7 @@ def getmstoken(appnum):
          }
     print(r'client_id: '+client_id)
     print(r'client_secret: '+client_secret)
-    print(r'ms_token: '+ms_tokenn)
+    print(r'ms_token: '+ms_token)
     print(r'redirect_uri: '+redirect_uri)    
     for retry_ in range(4):
         html = req.post('https://login.microsoftonline.com/common/oauth2/v2.0/token',data=data,headers=ms_headers)
