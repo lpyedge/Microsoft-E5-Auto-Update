@@ -69,8 +69,13 @@ def getmstoken(appnum):
          'client_secret':client_secret,
          'redirect_uri':redirect_uri,
          }
+    print(r'client_id: '+client_id)
+    print(r'client_secret: '+client_secret)
+    print(r'ms_token: '+ms_tokenn)
+    print(r'redirect_uri: '+redirect_uri)    
     for retry_ in range(4):
         html = req.post('https://login.microsoftonline.com/common/oauth2/v2.0/token',data=data,headers=ms_headers)
+        print(r'请求结果'+str(appnum+1)+': \n'+html.text)
         #json.dumps失败
         if html.status_code < 300:
             print(r'账号/应用 '+str(appnum+1)+' 的微软密钥获取成功')
