@@ -159,5 +159,5 @@ deletesecret('ACCOUNT_DEL')
 #项目60天无变动会自动停止所有action
 #path=sys.path[0]+r'/1.txt'
 file_path = sys.path[0]+r'/UpdateToken.log'
-with open(file_path, mode='w', encoding='utf-8') as file_obj:
+with open(file_path, mode='w+', encoding='utf-8') as file_obj:
     file_obj.write('更新token成功！' + datetime.datetime.now().strftime('%Y-%m-%d %I:%M:%S %p'))
