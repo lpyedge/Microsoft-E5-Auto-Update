@@ -38,3 +38,14 @@ jobs:
         TG_BOT: ${{ secrets.TG_BOT }}  
       run: |
         python UpdateToken.py
+    - name: Commit #提交变更仓库
+      run: |
+        git config --global user.email admin@lpyedge.com
+        git config --global user.name lpyedge
+        git add .
+        git commit -m "update token logs" -a
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GH_TOKEN }}
+        branch: main
