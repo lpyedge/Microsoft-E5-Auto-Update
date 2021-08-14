@@ -70,7 +70,7 @@ def timeDelay(xdelay):
     if config[xdelay][0] == 1:
         time.sleep(random.randint(config[xdelay][1],config[xdelay][2]))
         
-def apiReq(method,a,url,data='QAQ'):
+def apiReq(method,a,url,data='CYKJ'):
     timeDelay('api_delay')
     access_token=access_token_list[a]
     headers={
@@ -291,7 +291,7 @@ for _ in range(1,config['rounds']+1):
         timeDelay('app_delay')    
         print('账号 '+str(a+1))    
         #生成随机名称
-        filesname='QAQ'+str(random.randint(1,600))+r'.xlsx'
+        filesname='CYKJ'+str(random.randint(1,600))+r'.xlsx'
         #新建随机xlsx文件
         xls = xlsxwriter.Workbook(filesname)
         xlssheet = xls.add_worksheet()
@@ -306,16 +306,16 @@ for _ in range(1,config['rounds']+1):
         choosenum = random.sample(range(1, 5),2)
         if config['allstart'] == 1 or 1 in choosenum:
             print('excel文件操作')
-            excelWrite(a,filesname,'QVQ'+str(random.randint(1,600)))
+            excelWrite(a,filesname,'CYKJ'+str(random.randint(1,600)))
         if config['allstart'] == 1 or 2 in choosenum:
             print('team操作')
-            teamWrite(a,'QVQ'+str(random.randint(1,600)))
+            teamWrite(a,'CYKJ'+str(random.randint(1,600)))
         if config['allstart'] == 1 or 3 in choosenum:
             print('task操作')
-            taskWrite(a,'QVQ'+str(random.randint(1,600)))
+            taskWrite(a,'CYKJ'+str(random.randint(1,600)))
         if config['allstart'] == 1 or 4 in choosenum:
             print('onenote操作')
-            onenoteWrite(a,'QVQ'+str(random.randint(1,600)))
+            onenoteWrite(a,'CYKJ'+str(random.randint(1,600)))
         print('-')
 if other_config['tg_bot'] != []:
     content='AutoApi.W简报: '+'\n'
