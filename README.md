@@ -170,6 +170,18 @@ ________________________________________________
 
 __________________________________________________________________________
 
+### 微软方面补充工作 ###
+
+#### 用户邮箱启用smtp基础验证 ####
+
+   * 1) [如何设置多功能设备或应用程序以使用 Microsoft 365 或 Office 365 发送电子邮件](https://docs.microsoft.com/zh-cn/Exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365?redirectSourcePath=%252farticle%252fHow-to-set-up-a-multifunction-device-or-application-to-send-email-using-Office-365-69f58e99-c550-4274-ad18-c805d654b4c4)
+
+   * 2) [修改Arure AD 账户 安全默认值](https://docs.microsoft.com/zh-cn/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
+    
+   * 3) [启用或禁用通过身份验证的客户端 SMTP (SMTP AUTH) smtp Exchange Online](https://docs.microsoft.com/zh-cn/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission)
+
+__________________________________________________________________________
+
 ## 额外设置 （看不懂请忽略）##
    * **定时启动修改**
    *     
