@@ -2,13 +2,6 @@
 name: Run Api.Write
 
 on: 
-  release:
-    types: [published]
-  push:
-    tags:
-    - 'v*'
-  #  branches: 
-  #    - master
   schedule:
     - cron: '12 23 * * *'
   watch:
