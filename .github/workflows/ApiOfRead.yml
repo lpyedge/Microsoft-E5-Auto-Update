@@ -2,13 +2,6 @@
 name: Run Api.Read
 
 on: 
-  release:
-    types: [published]
-  push:
-    tags:
-    - 'v*'
-  #  branches: 
-  #    - master
   schedule:
     - cron: '12 */6 * * 1-5'
   watch:
