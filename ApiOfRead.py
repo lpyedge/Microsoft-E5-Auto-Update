@@ -141,15 +141,14 @@ def sendTgBot(content):
             if retry_ == 3:
                 print('tg推送失败')
     print('')
+    
+print(account)
 
 #一次性获取access_token，降低获取率
 for a in range(0, app_count):
     client_id=account['client_id'][a]
-    print(a+":"+client_id)
     client_secret=account['client_secret'][a]
-    print(a+":"+client_secret)
     ms_token=account['ms_token'][a]
-    print(a+":"+ms_token)
     access_token_list[a]=getmstoken(a)
 
 #随机api序列
