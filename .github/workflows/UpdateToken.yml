@@ -1,9 +1,9 @@
-#每周1，4，6自动更新refresh_token
+#自动更新refresh_token
 name: Update Token
 
 on: 
   schedule:
-    - cron: '10 10 * * 1,4,6'
+    - cron: '21 13 4,15,26 * *'
   watch:
     types: [started]
    
