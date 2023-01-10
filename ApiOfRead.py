@@ -81,12 +81,8 @@ def getmstoken(appnum):
          'client_secret':client_secret,
          'redirect_uri':redirect_uri,
          }
-    
-    print(data)
     for retry_ in range(4):
         html = req.post('https://login.microsoftonline.com/common/oauth2/v2.0/token',data=data,headers=headers)
-        
-        print(html.status_code)
         if html.status_code < 300:
             print(r'账号/应用 '+str(appnum+1)+' 的微软密钥获取成功')
             break
@@ -141,8 +137,6 @@ def sendTgBot(content):
             if retry_ == 3:
                 print('tg推送失败')
     print('')
-    
-print(account)
 
 #一次性获取access_token，降低获取率
 for a in range(0, app_count):
