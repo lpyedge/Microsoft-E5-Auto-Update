@@ -3,7 +3,7 @@ name: Run Api.Read
 
 on: 
   schedule:
-    - cron: '34 4/5 * * 1-6'
+    - cron: '14,49 6-20 * * 1-6'
   watch:
     types: [started]
    
