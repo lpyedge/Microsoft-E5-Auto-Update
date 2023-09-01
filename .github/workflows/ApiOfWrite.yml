@@ -3,7 +3,7 @@ name: Run Api.Write
 
 on: 
   schedule:
-    - cron: '47 13,20 1/2 * *'
+    - cron: '35 8,13,17,20 * * 1-6'
   watch:
     types: [started]
    
